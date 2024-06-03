@@ -59,7 +59,7 @@ export default function Home() {
             >
               <Image
                 src={"/manuela_home.jpg"}
-                alt="Manuela"
+                alt="Manuela Home"
                 fill
                 style={{ objectFit: "cover" }}
               />
