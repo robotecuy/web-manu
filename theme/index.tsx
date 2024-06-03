@@ -57,7 +57,7 @@ export const theme: Record<string, any> = {
         },
       },
       drawerMenu: {
-        backgroundColor: "red",
+        backgroundColor: "white",
         backdropFilter: "none",
         item: {
           color: black,
