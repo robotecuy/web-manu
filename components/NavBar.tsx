@@ -66,7 +66,7 @@ export const NavBar = () => {
 
   const listenScrollEvent = () => {
     if (window.scrollY > 250) {
-      setHeaderColor(_backgroundColor);
+      setHeaderColor("blackAlpha.500");
     } else {
       setHeaderColor("transparent");
     }
