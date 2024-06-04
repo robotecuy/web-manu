@@ -6,7 +6,7 @@ const PinturasPage = () => {
   return (
     <>
       <NavBar />
-      <Box position="relative" h="100vh" bg="red.100">
+      <Box position="relative" h="100vh">
         <Image
           src={"/torta.png"}
           alt="Prueba"
@@ -58,7 +58,7 @@ const PinturasPage = () => {
           </Flex>
         </Container>
       </Box>
-      <Box position="relative" h="100vh" bg="blue.100">
+      <Box position="relative" h="100vh">
         <Image
           src={"/manuel-cuadro-2.png"}
           alt="Prueba"
