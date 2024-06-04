@@ -6,7 +6,7 @@ const PinturasPage = () => {
   return (
     <>
       <NavBar />
-      <Box position="relative" h="100vh">
+      <Box position="relative" h="100vh" bg="red.100">
         <Image
           src={"/torta.png"}
           alt="Prueba"
@@ -16,16 +16,16 @@ const PinturasPage = () => {
       </Box>
       <Box pb="0.75rem">
         <Container>
-          <Flex justifyContent="center">
-            <Text fontSize="5rem" fontWeight="bold">
+          <Flex justifyContent="center" py={{ base: "0.5rem", lg: "0" }}>
+            <Text fontSize={{ base: "1.625rem", lg: "5rem" }} fontWeight="bold">
               Serie Trastornos Alimenticios
             </Text>
           </Flex>
-          <Flex>
+          <Flex flexDir={{ base: "column", lg: "row" }}>
             <Flex
               flexDir="column"
               gap="0.25rem"
-              fontSize="1.5rem"
+              fontSize={{ base: "1.125rem", lg: "1.5rem" }}
               fontWeight="semibold"
               color="blackAlpha.600"
               w="100%"
@@ -45,14 +45,20 @@ const PinturasPage = () => {
               <Text>Me volví un monstruo</Text>
             </Flex>
             <Flex alignItems="end">
-              <Text color="red" fontWeight="bold" fontSize="3.75rem" w="28rem">
+              <Text
+                textAlign="right"
+                color="red"
+                fontWeight="bold"
+                fontSize={{ base: "2rem", lg: "3.75rem" }}
+                w="28rem"
+              >
                 Coming Soon...
               </Text>
             </Flex>
           </Flex>
         </Container>
       </Box>
-      <Box position="relative" h="100vh">
+      <Box position="relative" h="100vh" bg="blue.100">
         <Image
           src={"/manuel-cuadro-2.png"}
           alt="Prueba"
