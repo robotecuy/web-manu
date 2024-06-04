@@ -8,9 +8,16 @@ const TrabajosPage = () => {
       <NavBar />
       <Box h="100vh" bg="blackAlpha.700"></Box>
       <Container>
-        <Flex h="35rem" alignItems="center" gap="1.5rem">
-          <Box bg="black" w="25rem" h="30rem"></Box>
-          <Flex flexDir="column" w="50rem">
+        <Flex
+          h={{ base: "100%", lg: "auto" }}
+          pt={{ base: "1rem", lg: "3rem" }} // sacar
+          pb="3rem"
+          alignItems="center"
+          gap="1.5rem"
+          flexDir={{ base: "column", lg: "row" }}
+        >
+          <Box bg="black" w={{ base: "100%", lg: "25rem" }} h="30rem"></Box>
+          <Flex flexDir="column" w={{ base: "100%", lg: "50rem" }}>
             <Text
               color="blackAlpha.700"
               fontSize="2.5rem"
@@ -67,8 +74,14 @@ const TrabajosPage = () => {
             </Text>
           </Flex>
         </Flex>
-        <Flex h="35rem" alignItems="center" gap="1.5rem">
-          <Flex flexDir="column" w="50rem">
+        <Flex
+          h={{ base: "100%", lg: "auto" }}
+          pb="3rem"
+          alignItems="center"
+          gap="1.5rem"
+          flexDir={{ base: "column-reverse", lg: "row" }}
+        >
+          <Flex flexDir="column" w={{ base: "100%", lg: "50rem" }}>
             <Text
               color="blackAlpha.700"
               fontSize="2.5rem"
@@ -126,11 +139,17 @@ const TrabajosPage = () => {
               asi nuestra propia serenidad y progreso.
             </Text>
           </Flex>
-          <Box bg="black" w="25rem" h="30rem"></Box>
+          <Box bg="black" w={{ base: "100%", lg: "25rem" }} h="30rem"></Box>
         </Flex>
-        <Flex h="35rem" alignItems="center" gap="1.5rem">
-          <Box bg="black" w="25rem" h="30rem"></Box>
-          <Flex flexDir="column" w="50rem">
+        <Flex
+          h={{ base: "100%", lg: "auto" }}
+          pb="3rem"
+          alignItems="center"
+          gap="1.5rem"
+          flexDir={{ base: "column", lg: "row" }}
+        >
+          <Box bg="black" w={{ base: "100%", lg: "25rem" }} h="30rem"></Box>
+          <Flex flexDir="column" w={{ base: "100%", lg: "50rem" }}>
             <Text
               color="blackAlpha.700"
               fontSize="2.5rem"
@@ -186,8 +205,14 @@ const TrabajosPage = () => {
             </Text>
           </Flex>
         </Flex>
-        <Flex h="35rem" alignItems="center" gap="1.5rem">
-          <Flex flexDir="column" w="50rem">
+        <Flex
+          h={{ base: "100%", lg: "auto" }}
+          pb="3rem"
+          alignItems="center"
+          gap="1.5rem"
+          flexDir={{ base: "column-reverse", lg: "row" }}
+        >
+          <Flex flexDir="column" w={{ base: "100%", lg: "50rem" }}>
             <Text
               color="blackAlpha.700"
               fontSize="2.5rem"
@@ -246,7 +271,7 @@ const TrabajosPage = () => {
               la niñez y las exigencias del mundo adulto.
             </Text>
           </Flex>
-          <Box bg="black" w="25rem" h="30rem"></Box>
+          <Box bg="black" w={{ base: "100%", lg: "25rem" }} h="30rem"></Box>
         </Flex>
       </Container>
     </>

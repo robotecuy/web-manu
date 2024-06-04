@@ -6,7 +6,7 @@ const ContactoPage = () => {
   return (
     <>
       <NavBar />
-      <Box h="100vh" bg="blackAlpha.400">
+      <Box h="100vh" bg="blackAlpha.600">
         <Container pt="5rem">
           <Box color="white">
             <Text>Manuela Panasco</Text>
