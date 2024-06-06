@@ -23,6 +23,7 @@ import { HiMenuAlt2 } from "react-icons/hi";
 const _backgroundColor = "brand.navBar.backgroundColor";
 
 const menuItems = [
+  { id: "inicio", text: "Inicio", href: "/" },
   { id: "fotografias", text: "Fotografías", href: "/fotografias" },
   { id: "pinturas", text: "Pinturas", href: "/pinturas" },
   { id: "trabajos", text: "Trabajos", href: "/trabajos" },
@@ -62,26 +63,26 @@ export const NavBar = () => {
 
   const isLg = useBreakpointValue({ base: false, lg: true });
 
-  const [headerColor, setHeaderColor] = useState("transparent");
+  // const [headerColor, setHeaderColor] = useState("transparent");
 
-  const listenScrollEvent = () => {
-    if (window.scrollY > 250) {
-      setHeaderColor("blackAlpha.500");
-    } else {
-      setHeaderColor("transparent");
-    }
-  };
+  // const listenScrollEvent = () => {
+  //   if (window.scrollY > 250) {
+  //     setHeaderColor("blackAlpha.500");
+  //   } else {
+  //     setHeaderColor("transparent");
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", listenScrollEvent);
+  // }, []);
 
   return (
     <Flex
       position="fixed"
       zIndex={999}
       w="100%"
-      bg={headerColor}
+      bg={"blackAlpha.500"}
       animation="ease-out"
       transitionDuration="300ms"
     >

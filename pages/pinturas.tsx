@@ -58,7 +58,7 @@ const PinturasPage = () => {
           </Flex>
         </Container>
       </Box>
-      <Box position="relative" h="100vh">
+      <Box position="relative" h="52rem">
         <Image
           src={"/manuel-cuadro-2.png"}
           alt="Prueba"

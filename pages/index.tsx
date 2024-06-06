@@ -6,7 +6,14 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <Box h="100vh" bg="blue"></Box>
+      <Box h="100vh" bg="black" position="relative">
+        <Image
+          src={"/inicio.jpg"}
+          alt="Prueba"
+          fill
+          style={{ objectFit: "cover" }}
+        />
+      </Box>
       <Box h={{ base: "100%", lg: "52rem" }} bg="black" p="2rem">
         <Container h="100%" display="flex" justifyContent="space-between" p="0">
           <Flex

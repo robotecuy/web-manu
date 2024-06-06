@@ -6,8 +6,76 @@ const TrabajosPage = () => {
   return (
     <>
       <NavBar />
-      <Box h="100vh" bg="blackAlpha.700"></Box>
+      <Box bg="black">
+        <Container px={{ base: 0 }}>
+          <Box
+            bg="black"
+            h="45rem"
+            backgroundImage={"/trabajos_1.jpg"}
+            backgroundRepeat="no-repeat"
+            backgroundSize="cover"
+          >
+            <Box pt="15rem" pl="6rem">
+              <Text fontWeight="extrabold" fontSize="3rem" lineHeight="3.75rem">
+                Geometrías
+              </Text>
+              <Text fontWeight="extrabold" fontSize="3rem" lineHeight="3.75rem">
+                Del
+              </Text>
+              <Text
+                fontWeight="extrabold"
+                fontSize="3rem"
+                lineHeight="3.75rem"
+                color="red.500"
+              >
+                Alma
+              </Text>
+              <Text fontWeight="extrabold" fontSize="1.5rem">
+                REDISEÑA
+              </Text>
+            </Box>
+          </Box>
+        </Container>
+      </Box>
       <Container>
+        <Box
+          bg="white"
+          h={{ base: "48rem", lg: "45rem" }}
+          backgroundImage={"/trabajos_2.jpg"}
+          backgroundRepeat="no-repeat"
+          backgroundSize="cover"
+        >
+          <Text
+            w={{ base: "100%", lg: "38.5rem" }}
+            fontWeight="black"
+            fontSize="2rem"
+            lineHeight="2.25rem"
+            pt="5rem"
+          >
+            <Text as="span" color="red.500">
+              Manuela Panasco
+            </Text>{" "}
+            es una artista uruguaya que busca expresar emociones y vivencias
+            propias a través del arte. En esta ocasión, estará realizando un
+            proyecto en el marco de la propuesta{" "}
+            <Text as="span" color="red.500">
+              &quot;Rediseña&quot;
+            </Text>
+            , inspirada en el escultor{" "}
+            <Text as="span" color="red.500">
+              Octavio Podestá
+            </Text>
+            . Se combinarán ambos estilos para generar un producto que logre
+            capturar y combinar la esencia de ambos artistas, creando piezas de
+            arte únicas.
+          </Text>
+          {/* <Image
+          src={"/trabajos_2.jpg"}
+          alt="Prueba"
+          fill
+          style={{ objectFit: "contain" }}
+        /> */}
+        </Box>
         <Flex
           h={{ base: "100%", lg: "auto" }}
           pt={{ base: "1rem", lg: "3rem" }} // sacar
@@ -16,7 +84,19 @@ const TrabajosPage = () => {
           gap="1.5rem"
           flexDir={{ base: "column", lg: "row" }}
         >
-          <Box bg="black" w={{ base: "100%", lg: "25rem" }} h="30rem"></Box>
+          <Box
+            bg="black"
+            w={{ base: "100%", lg: "25rem" }}
+            h="30rem"
+            position="relative"
+          >
+            <Image
+              src={"/la_paternidad.png"}
+              alt="Prueba"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </Box>
           <Flex flexDir="column" w={{ base: "100%", lg: "50rem" }}>
             <Text
               color="blackAlpha.700"
@@ -139,7 +219,19 @@ const TrabajosPage = () => {
               asi nuestra propia serenidad y progreso.
             </Text>
           </Flex>
-          <Box bg="black" w={{ base: "100%", lg: "25rem" }} h="30rem"></Box>
+          <Box
+            bg="black"
+            w={{ base: "100%", lg: "25rem" }}
+            h="30rem"
+            position="relative"
+          >
+            <Image
+              src={"/autosabotaje.png"}
+              alt="Prueba"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </Box>
         </Flex>
         <Flex
           h={{ base: "100%", lg: "auto" }}
@@ -148,7 +240,19 @@ const TrabajosPage = () => {
           gap="1.5rem"
           flexDir={{ base: "column", lg: "row" }}
         >
-          <Box bg="black" w={{ base: "100%", lg: "25rem" }} h="30rem"></Box>
+          <Box
+            bg="black"
+            w={{ base: "100%", lg: "25rem" }}
+            h="30rem"
+            position="relative"
+          >
+            <Image
+              src={"/la_contradiccion.png"}
+              alt="Prueba"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </Box>
           <Flex flexDir="column" w={{ base: "100%", lg: "50rem" }}>
             <Text
               color="blackAlpha.700"
@@ -271,7 +375,19 @@ const TrabajosPage = () => {
               la niñez y las exigencias del mundo adulto.
             </Text>
           </Flex>
-          <Box bg="black" w={{ base: "100%", lg: "25rem" }} h="30rem"></Box>
+          <Box
+            bg="black"
+            w={{ base: "100%", lg: "25rem" }}
+            h="30rem"
+            position="relative"
+          >
+            <Image
+              src={"/quiero_ser_un_ninio.png"}
+              alt="Prueba"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </Box>
         </Flex>
       </Container>
     </>
