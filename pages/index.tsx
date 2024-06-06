@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <Box h="100vh" bg="black" position="relative">
+      <Box h={{ base: "15rem", lg: "100vh" }} bg="black" position="relative">
         <Image
           src={"/inicio.jpg"}
           alt="Prueba"
