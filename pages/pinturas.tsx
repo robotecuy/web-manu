@@ -14,9 +14,9 @@ const PinturasPage = () => {
           style={{ objectFit: "cover" }}
         />
       </Box>
-      <Box pb="0.75rem">
+      <Flex pb="0.75rem" h="100vh" alignItems="center">
         <Container>
-          <Flex justifyContent="center" py={{ base: "0.5rem", lg: "0" }}>
+          <Flex py={{ base: "0.5rem", lg: "0" }}>
             <Text fontSize={{ base: "1.625rem", lg: "5rem" }} fontWeight="bold">
               Serie Trastornos Alimenticios
             </Text>
@@ -57,7 +57,7 @@ const PinturasPage = () => {
             </Flex>
           </Flex>
         </Container>
-      </Box>
+      </Flex>
       <Box position="relative" h={{ base: "14rem", lg: "48rem" }}>
         <Image
           src={"/manuel-cuadro-2.png"}
