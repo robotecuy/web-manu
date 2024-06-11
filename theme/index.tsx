@@ -67,6 +67,11 @@ export const theme: Record<string, any> = {
     },
   },
 
+  fonts: {
+    heading: `'Inter', sans-serif`,
+    body: `'Inter', sans-serif`,
+  },
+
   components: {
     Form: {
       variants: {
@@ -96,6 +101,14 @@ export const theme: Record<string, any> = {
             },
           },
         },
+      },
+    },
+  },
+
+  styles: {
+    global: {
+      html: {
+        overflowY: "scroll",
       },
     },
   },

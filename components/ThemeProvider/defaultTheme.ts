@@ -1,21 +1,22 @@
-import { cardTheme } from './card.theme';
+import { cardTheme } from "./card.theme";
 
-import '@fontsource/roboto/100.css';
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-import '@fontsource/roboto/900.css';
-import { grey0, grey1, grey2, grey3 } from './colors';
+import "@fontsource/roboto/100.css";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/900.css";
+import "@fontsource/inter/400.css";
+import { grey0, grey1, grey2, grey3 } from "./colors";
 
 export const defaultTheme: Record<string, any> = {
   fonts: {
-    heading: `'Roboto', sans-serif`,
-    body: `'Roboto', sans-serif`,
+    heading: `'Inter', sans-serif`,
+    body: `'Inter', sans-serif`,
   },
   colors: {
     brand: {
-      grey: { '0': grey0, '1': grey1, '2': grey2, '3': grey3 },
+      grey: { "0": grey0, "1": grey1, "2": grey2, "3": grey3 },
       input: {
         borderColor: grey1,
         _focus: {
@@ -34,12 +35,12 @@ export const defaultTheme: Record<string, any> = {
         },
       },
       navBar: {
-        backgroundColor: 'white',
+        backgroundColor: "white",
         borderColor: grey1,
         iconButton: {
           color: grey3,
           _hover: {
-            color: 'black',
+            color: "black",
           },
         },
         input: {
@@ -54,9 +55,9 @@ export const defaultTheme: Record<string, any> = {
       },
       carousel: {
         iconButton: {
-          color: 'rgba(201, 201, 201, 0.6)',
+          color: "rgba(201, 201, 201, 0.6)",
           _hover: {
-            color: 'rgb(201, 201, 201)',
+            color: "rgb(201, 201, 201)",
           },
         },
       },

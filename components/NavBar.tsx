@@ -10,24 +10,16 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { MenuDrawer, Container, Logo } from "../components";
-import {
-  useEffect,
-  useRef,
-  useState,
-  MutableRefObject,
-  ElementType,
-} from "react";
+import { useRef, MutableRefObject } from "react";
 import { IconType } from "react-icons";
-import { HiMenuAlt2 } from "react-icons/hi";
-
-const _backgroundColor = "brand.navBar.backgroundColor";
+import { HiMenuAlt3 } from "react-icons/hi";
 
 const menuItems = [
-  { id: "inicio", text: "Inicio", href: "/" },
-  { id: "fotografias", text: "Fotografías", href: "/fotografias" },
-  { id: "pinturas", text: "Pinturas", href: "/pinturas" },
-  { id: "trabajos", text: "Trabajos", href: "/trabajos" },
-  { id: "contacto", text: "Contacto", href: "/contacto" },
+  { id: "statement", text: "Artist Statement", href: "/statement" },
+  { id: "artworks", text: "Artworks", href: "/artworks" },
+  { id: "photographs", text: "Photographs", href: "/photographs" },
+  { id: "exhibitions", text: "Exhibitions", href: "/exhibitions" },
+  { id: "contact", text: "Contact", href: "/contact" },
 ];
 
 type IconButtonProps = {
@@ -46,16 +38,12 @@ const IconButton = ({ buttonProps, icon }: IconButtonProps) => (
         w="1.75rem"
         h="1.75rem"
         display="block"
-        color="white"
-        _hover={{ color: "white" }}
+        color="black"
+        _hover={{ color: "black" }}
       />
     }
   />
 );
-
-// type NavBarProps = {
-//   Logo?: ElementType;
-// };
 
 export const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -63,54 +51,34 @@ export const NavBar = () => {
 
   const isLg = useBreakpointValue({ base: false, lg: true });
 
-  // const [headerColor, setHeaderColor] = useState("transparent");
-
-  // const listenScrollEvent = () => {
-  //   if (window.scrollY > 250) {
-  //     setHeaderColor("blackAlpha.500");
-  //   } else {
-  //     setHeaderColor("transparent");
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", listenScrollEvent);
-  // }, []);
-
   return (
-    <Flex
-      position="fixed"
-      zIndex={999}
-      w="100%"
-      bg={"blackAlpha.500"}
-      animation="ease-out"
-      transitionDuration="300ms"
-    >
-      <Container>
+    <Flex position="fixed" zIndex={999} w="100%" bg="white">
+      <Container maxW="container.xl" px="0">
         <Flex justifyContent="space-between" alignItems="center">
           <Link href="/">
             <Box
               _hover={{ backgroundColor: "none" }}
               _active={{ backgroundColor: "transparent" }}
             >
-              <Box w="4rem" h="4rem" position="relative">
+              <Flex
+                justifyContent="center"
+                alignItems="center"
+                w="3.5rem"
+                h="3.5rem"
+              >
                 {Logo && <Logo />}
-              </Box>
+              </Flex>
             </Box>
           </Link>
           {isLg ? (
-            <Flex gap="1rem">
+            <Flex gap="5rem">
               {menuItems.map(({ text, href }) => (
                 <Link key={text} href={href}>
                   <Box
-                    color="white"
-                    fontSize="1.25rem"
-                    fontWeight="bold"
-                    p="0.5rem"
                     _hover={{ backgroundColor: "none" }}
                     _active={{ backgroundColor: "transparent" }}
                   >
-                    <Text>{text}</Text>
+                    <Text fontFamily="inter">{text}</Text>
                   </Box>
                 </Link>
               ))}
@@ -123,8 +91,10 @@ export const NavBar = () => {
                 ref: btnRef,
                 onClick: onOpen,
                 _hover: { backgroundColor: "transparent" },
+                //wanna make the button black
+                fill: "black",
               }}
-              icon={HiMenuAlt2}
+              icon={HiMenuAlt3}
             />
           )}
         </Flex>
