@@ -14,7 +14,7 @@ const PinturasPage = () => {
           style={{ objectFit: "cover" }}
         />
       </Box>
-      <Flex pb="0.75rem" h="100vh" alignItems="center">
+      <Flex pb="2rem" h="100vh" alignItems="center">
         <Container>
           <Flex py={{ base: "0.5rem", lg: "0" }}>
             <Text fontSize={{ base: "1.625rem", lg: "5rem" }} fontWeight="bold">
@@ -49,6 +49,7 @@ const PinturasPage = () => {
                 textAlign="right"
                 color="red"
                 fontWeight="bold"
+                lineHeight="3.5rem"
                 fontSize={{ base: "2rem", lg: "3.75rem" }}
                 w="28rem"
               >
@@ -58,7 +59,7 @@ const PinturasPage = () => {
           </Flex>
         </Container>
       </Flex>
-      <Box position="relative" h={{ base: "14rem", lg: "48rem" }}>
+      <Box position="relative" h={{ base: "14rem", lg: "52rem" }}>
         <Image
           src={"/manuel-cuadro-2.png"}
           alt="Prueba"
