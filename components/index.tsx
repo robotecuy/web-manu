@@ -6,3 +6,4 @@ export * from "./Nav";
 export * from "./Container";
 export * from "./Logo";
 export * from "./Banner";
+export * from "./Contact";
