@@ -17,7 +17,7 @@ const StatementPage = () => {
             bg="white"
             pr={{ base: "0", md: "5rem" }}
             pt="5rem"
-            px={{ base: "1rem", md: "0" }}
+            pb={{ base: "2rem", md: "0" }}
           >
             <Heading color="black" fontSize="1.75rem" pb="1rem">
               Artist Statement
