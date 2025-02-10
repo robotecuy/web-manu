@@ -6,7 +6,7 @@ const StatementPage = () => {
   return (
     <>
       <NavBar />
-      <Container maxW="container.xl" px="0">
+      <Container maxW="container.xl">
         <Flex
           h={{ base: "140vh", md: "100vh" }}
           flexDir={{ base: "column", md: "row" }}

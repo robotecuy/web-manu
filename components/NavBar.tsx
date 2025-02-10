@@ -53,7 +53,7 @@ export const NavBar = () => {
 
   return (
     <Flex position="fixed" zIndex={999} w="100%" bg="white">
-      <Container maxW="container.xl" px="0">
+      <Container maxW="container.xl">
         <Flex justifyContent="space-between" alignItems="center">
           <Link href="/">
             <Box

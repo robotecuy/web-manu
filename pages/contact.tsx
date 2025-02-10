@@ -7,7 +7,7 @@ const ContactPage = () => {
     <>
       <NavBar />
       <Box h="100vh">
-        <Container pt="4rem" px="0">
+        <Container pt="4rem">
           <Flex gap="1.25rem" flexDir="column">
             <Heading>Contact Information</Heading>
             <Flex gap="1rem">

@@ -7,7 +7,7 @@ const ArtworksPage = () => {
   return (
     <>
       <NavBar />
-      <Container maxW="container.xl" px="0" py="3.5rem">
+      <Container maxW="container.xl" py="3.5rem">
         <Grid
           gridTemplateAreas={{
             base: `"a" "b" "c" "d" "e" "f" "g"`,

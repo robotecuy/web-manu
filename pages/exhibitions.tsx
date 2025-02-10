@@ -6,7 +6,7 @@ const ExhibitionsPage = () => {
   return (
     <>
       <NavBar />
-      <Container maxW="container.xl" h="100vh" pt="4rem" px="0">
+      <Container maxW="container.xl" h="100vh" pt="4rem">
         <Flex gap="1.5rem" pb="2.5rem" flexDir={{ base: "column", md: "row" }}>
           <Box minW="30rem" h="23rem" position="relative">
             <Image
