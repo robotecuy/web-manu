@@ -88,8 +88,12 @@ export const Contact = () => {
                   <Text fontSize="1.5rem" fontWeight="bold">
                     Contact me
                   </Text>
-                  <Flex w="100%" gap="1rem">
-                    <Box w="50%">
+                  <Flex
+                    w="100%"
+                    gap="1rem"
+                    flexDir={{ base: "column", lg: "row" }}
+                  >
+                    <Box w={{ base: "100%", lg: "50%" }}>
                       <FormControl isInvalid={!!errors.name} variant="floating">
                         <Field
                           as={Input}
@@ -105,7 +109,7 @@ export const Contact = () => {
                         <FormErrorMessage>{errors.name}</FormErrorMessage>
                       </FormControl>
                     </Box>
-                    <Box w="50%">
+                    <Box w={{ base: "100%", lg: "50%" }}>
                       <FormControl
                         isInvalid={!!errors.last_name}
                         variant="floating"
@@ -187,7 +191,7 @@ export const Contact = () => {
                     color="white"
                     width="100%"
                     mt={2}
-                    _hover={{ backgroundColor: "primary.main" }}
+                    _hover={{ backgroundColor: "black" }}
                   >
                     SEND
                   </Button>

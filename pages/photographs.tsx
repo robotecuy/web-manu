@@ -10,7 +10,7 @@ const PhotographsPage = () => {
         w="100%"
         bg="blackAlpha.100"
         h="120vh"
-        pt="3rem"
+        pt="3.5rem"
         gridTemplateAreas={{
           base: `"a a a a" "b b b b" "c c c c" "d d d d" "e e e e"`,
           md: `"a a b b" "a a b b" "a a c c" "d e c c" "d e c c"`,
