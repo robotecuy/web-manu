@@ -2,13 +2,18 @@ import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
 type ArtworkProps = {
+  horizontal?: boolean;
   src: string;
   alt: string;
 };
 
-export const Artwork = ({ src, alt }: ArtworkProps) => {
+export const Artwork = ({ src, alt, horizontal }: ArtworkProps) => {
   return (
-    <Box position="relative" h="32rem" overflow="hidden">
+    <Box
+      position="relative"
+      h={horizontal ? "14rem" : "32rem"}
+      overflow="hidden"
+    >
       <Image
         src={`/artworks/${src}.jpg`}
         alt={alt}
@@ -30,7 +35,7 @@ export const Artwork = ({ src, alt }: ArtworkProps) => {
         pb="2rem"
         pl="1.5rem"
       >
-        <Text color="white" fontSize="xl" fontWeight="bold">
+        <Text color="white" fontSize="xl" fontWeight="bold" pr="1rem">
           {alt}
         </Text>
       </Box>

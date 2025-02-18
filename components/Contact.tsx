@@ -18,12 +18,12 @@ import { Field, Formik } from "formik";
 const _secondBoxWidth = { base: "100%", lg: "40rem" };
 
 const validateEmpty = (value: string) => {
-  if (!value.toString().length) return "Este campo es obligatorio";
+  if (!value.toString().length) return "This field is mandatory";
   return undefined;
 };
 
 const validateEmail = (value: string) => {
-  if (!value.toString().length) return "Este campo es obligatorio";
+  if (!value.toString().length) return "This field is mandatory";
   if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(value))
     return "El correo electrónico no es válido";
   return undefined;
@@ -49,7 +49,7 @@ export const Contact = () => {
     window.location.href = encodeURI(mailtoLink);
 
     toast({
-      title: "Abriendo aplicacion de correo...",
+      title: "Opening mail app...",
       status: "info",
       duration: 3000,
       isClosable: true,

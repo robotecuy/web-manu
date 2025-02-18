@@ -14,15 +14,18 @@ const StatementPage = () => {
         >
           <Box
             w={{ base: "100%", md: "50%" }}
-            bg="white"
-            pr={{ base: "0", md: "5rem" }}
             pt="5rem"
             pb={{ base: "2rem", md: "0" }}
           >
             <Heading color="black" fontSize="1.75rem" pb="1rem">
               Artist Statement
             </Heading>
-            <Text color="black" fontSize="1rem" fontWeight="normal">
+            <Text
+              color="black"
+              fontSize="1rem"
+              fontWeight="normal"
+              textAlign="justify"
+            >
               I am Manuela Panasco, a developing Uruguayan artist. Currently, I
               am studying Visual Arts at the Catholic University of Montevideo
               and I am simultaneously developing my artistic career. My focus is
@@ -41,7 +44,12 @@ const StatementPage = () => {
               scene.
             </Text>
           </Box>
-          <Box w={{ base: "100%", md: "50%" }} h="100%" position="relative">
+          <Box
+            w={{ base: "100%", md: "50%" }}
+            h="100%"
+            position="relative"
+            mb={{ base: "1rem", md: "0" }}
+          >
             <Image
               src="/manuela.jpg"
               alt="Prueba"

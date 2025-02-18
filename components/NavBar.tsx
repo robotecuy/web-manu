@@ -15,6 +15,7 @@ import { IconType } from "react-icons";
 import { HiMenuAlt3 } from "react-icons/hi";
 
 const menuItems = [
+  { id: "home", text: "Home", href: "/" },
   { id: "statement", text: "Artist Statement", href: "/statement" },
   { id: "artworks", text: "Artworks", href: "/artworks" },
   { id: "photographs", text: "Photographs", href: "/photographs" },

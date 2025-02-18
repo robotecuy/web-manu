@@ -16,7 +16,10 @@ const PhotographsPage = () => {
           md: `"a a b b" "a a b b" "a a c c" "d e c c" "d e c c"`,
         }}
         gridTemplateColumns="1.2fr 1.2fr 0.6fr 1fr"
-        gridTemplateRows="1fr 1.5fr 0.8fr 0.7fr 1fr"
+        gridTemplateRows={{
+          base: "auto auto auto auto auto",
+          md: "1fr 1.5fr 0.8fr 0.7fr 1fr",
+        }}
       >
         <GridItem position="relative" gridArea="a">
           <Image
@@ -68,7 +71,10 @@ const PhotographsPage = () => {
           md: `"a c c c""a c c c" "b c c c" "b d d e" "b d d f"`,
         }}
         gridTemplateColumns="1.2fr 1fr 1fr 0.8fr"
-        gridTemplateRows="2fr 1fr 0.6fr 1.2fr 1.2fr"
+        gridTemplateRows={{
+          base: "auto auto auto auto auto auto",
+          md: "2fr 1fr 0.6fr 1.2fr 1.2fr",
+        }}
       >
         <GridItem position="relative" gridArea="a">
           <Image
@@ -165,7 +171,10 @@ const PhotographsPage = () => {
           md: `"a a f f" "b b f f""b b g g""c c g g""c c h h""d e h h"`,
         }}
         gridTemplateColumns="1fr 0.8fr 1.2fr 1fr"
-        gridTemplateRows="1.7fr 0.3fr 1.4fr 0.4fr 1.3fr 1.1fr"
+        gridTemplateRows={{
+          base: "auto auto auto auto auto auto auto auto",
+          md: "1.7fr 0.3fr 1.4fr 0.4fr 1.3fr 1.1fr",
+        }}
       >
         <GridItem position="relative" gridArea="a">
           <Image
